@@ -55,5 +55,6 @@ after-stage::
 	$(ECHO_NOTHING)cp $(THEOS_STAGING_DIR)/../../alert.dylib $(THEOS_STAGING_DIR)/Payload/Titanium.app$(ECHO_END)
 	$(ECHO_NOTHING)cp $(THEOS_STAGING_DIR)/../../Info.plist $(THEOS_STAGING_DIR)/Payload/Titanium.app$(ECHO_END)
 	$(ECHO_NOTHING)cp $(THEOS_STAGING_DIR)/../../avatar.png $(THEOS_STAGING_DIR)/Payload/Titanium.app$(ECHO_END)
+	$(ECHO_NOTHING)cp $(THEOS_STAGING_DIR)/../../lol.png $(THEOS_STAGING_DIR)/Payload/Titanium.app$(ECHO_END)
 	$(ECHO_NOTHING)cd $(THEOS_STAGING_DIR); zip -qr Titanium.tipa Payload; cd -;$(ECHO_END)
 	$(ECHO_NOTHING)mv $(THEOS_STAGING_DIR)/Titanium.tipa packages/Titanium.tipa $(ECHO_END)
