@@ -34,6 +34,9 @@ PRs and improvements are welcome.
 
 ---
 
+## Archive Note
+> This project is archived. The code was originally written in February 2025<br>
+> and is kept here for reference / research purposes only.
 
 ## Credits
 
