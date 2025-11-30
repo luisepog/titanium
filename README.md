@@ -12,7 +12,7 @@ Expected to work on iOS versions supported by TrollStore (roughly iOS 14.0 – 1
 ```sh
 make package
 ```
-- Resulting Titanium.tipa will be placed in packages/.
+- Resulting Titanium.tipa will be placed in packages/.<br>
 PRs and improvements are welcome.
 
 ---
