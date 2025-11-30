@@ -9,6 +9,10 @@
   </tr>
 </table>
 
+## Archive Note
+> This project is archived. The code was originally written in February 2025<br>
+> and is kept here for reference / research purposes only.
+
 In‑app dylib injection with CoreTrust bypass and opainject.<br>
 Titanium lets you pick a target process, optionally choose a custom `.dylib`, re‑sign it with a CoreTrust bypass, and inject it into the process on‑device.<br>
 Expected to work on iOS versions supported by TrollStore (roughly iOS 14.0 – 17.0) when running with appropriate platform entitlements.<br>
@@ -33,10 +37,6 @@ PRs and improvements are welcome.
 - Notes: Injection tested on real App Store-signed binaries, running on-device via TrollStore with appropriate entitlements.
 
 ---
-
-## Archive Note
-> This project is archived. The code was originally written in February 2025<br>
-> and is kept here for reference / research purposes only.
 
 ## Credits
 
