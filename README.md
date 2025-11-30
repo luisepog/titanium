@@ -26,6 +26,14 @@ PRs and improvements are welcome.
 
 ---
 
+## Tested
+
+- Device: iPhone 11 Pro (arm64e)
+- Targets: Multiple stock App Store apps
+- Notes: Injection tested on real App Store-signed binaries, running on-device via TrollStore with appropriate entitlements.
+
+---
+
 ## Credits
 
 - CoreTrust bypass and signing flow based on fastPathSign.
