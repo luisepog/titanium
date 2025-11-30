@@ -40,7 +40,7 @@ PRs and improvements are welcome.
 - CoreTrust bypass and signing flow based on fastPathSign.
 - ROP‑based injection built around opainject.
 - Various ideas inspired by the iOS jailbreak / TrollStore community.<br><br>
-- Also tagging this troublemaker because he insisted 😏 He cracks good jokes, so he’s here
+Also tagging this troublemaker because he insisted 😏 He cracks good jokes, so he’s here
 Also tagging this troublemaker because he insisted 😏 He cracks good jokes, so he’s here
 Upstream components retain their original licenses.
 - [nkhmelni](https://github.com/nkhmelni)  
