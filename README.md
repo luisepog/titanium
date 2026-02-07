@@ -28,6 +28,11 @@ make package
 - Resulting Titanium.tipa will be placed in packages/.<br>
 PRs and improvements are welcome.
 
+### CI / Releases
+A GitHub Actions workflow (`.github/workflows/build-and-release.yml`) builds the project and publishes the `.tipa` to **Releases**:
+- **On tag push:** Push a tag like `v1.0.0` to trigger a build and create a release with `Titanium.tipa` attached.
+- **Manual run:** In the repo go to **Actions → Build and Release → Run workflow** to build and get the artifact (no release is created).
+
 ---
 
 ## Tested

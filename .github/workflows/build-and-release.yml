@@ -1,0 +1,43 @@
+# Build Titanium with Theos and publish .tipa to GitHub Releases
+# See README.md for build instructions (make package → packages/Titanium.tipa)
+
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'   # e.g. v1.0.0
+  workflow_dispatch:   # allow manual run
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Theos
+        uses: Randomblock1/theos-action@v2
+        with:
+          theos-dir: ${{ github.workspace }}/theos
+
+      - name: Build Titanium
+        env:
+          THEOS: ${{ github.workspace }}/theos
+        run: make package
+
+      - name: Upload Titanium.tipa artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Titanium-tipa
+          path: packages/Titanium.tipa
+
+      - name: Create Release and upload .tipa
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: packages/Titanium.tipa
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
